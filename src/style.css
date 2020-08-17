@@ -75,7 +75,7 @@ p {
   font-size: 2.5rem;
   position: absolute;
   right: 2.5rem;
-  top: 50%;
+  top: 5%;
   transform: translateY(-50%);
   z-index: 1500;
 }
@@ -130,4 +130,22 @@ i.fa-times {
 .open .nav::before {
   opacity: 1;
   transform: scale(1);
+}
+
+.nav-item {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-link {
+  color: #ffffff;
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-right: -2px;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: var(--secondary-font-color);
 }
