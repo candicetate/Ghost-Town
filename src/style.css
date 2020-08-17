@@ -351,3 +351,9 @@ i.fa-times {
 }
 
 /* Section 4 */
+.learn {
+  background: url(img/bulwark2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+/* Final section */
