@@ -3,6 +3,7 @@
 /* font-family: 'Cabin Sketch', cursive;
 font-family: 'Work Sans', sans-serif; */
 
+/* Main Styles */
 *,
 *::before,
 *::after {
@@ -32,8 +33,8 @@ section {
 }
 
 img {
-  width: 100%;
   max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -42,4 +43,91 @@ a {
 
 p {
   font-size: 1.5rem;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  max-width: 125rem;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  height: 7.5rem;
+  justify-content: center;
+}
+
+.menu-toggle {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1500;
+}
+
+i.fa-times {
+  display: none;
+}
+
+.nav-list {
+  background-color: var(--main-font-color-dark);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  left: 0;
+  list-style: none;
+  padding: 4.5rem;
+  position: fixed;
+  top: 0;
+  transition: transform 0.5s;
+  /*transform: translateX(-100%);*/
+  width: 80%;
+  z-index: 1250;
+}
+
+.nav::before {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transform: scale(0);
+  transition: opacity 0.5s;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.open .fa-times {
+  display: block;
+}
+
+.open .fa-bars {
+  display: none;
+}
+
+.open .nav-list {
+  transform: translateX(0);
+}
+
+.open .nav::before {
+  opacity: 1;
+  transform: scale(1);
 }
