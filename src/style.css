@@ -165,23 +165,46 @@ i.fa-times {
   width: 100%;
 }
 
-.sub-header {
-  color: var(--main-font-color-dark);
+.big {
+  color: #000000;
   font-size: 8.5rem;
   font-family: "Cabin Sketch", cursive;
   letter-spacing: 2px;
   line-height: 1;
 }
 
+.big-bg {
+  background-color: rgba(255, 255, 255, 0.75);
+  max-width: 100%;
+  padding: 5rem;
+  width: 100%;
+}
+
+.sub-header {
+  color: var(--main-font-color-dark);
+  font-size: 5rem;
+  font-family: "Cabin Sketch", cursive;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.sub-header-white {
+  color: #ffffff;
+  font-size: 5rem;
+  font-family: "Cabin Sketch", cursive;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
 .first-letter {
-  font-size: 10rem;
+  font-size: 8rem;
   text-transform: uppercase;
 }
 
-.headline {
+h1.headline {
   color: var(--main-font-color-dark);
   font-family: var(--main-font);
-  font-size: 3rem;
+  font-size: 1.5rem;
   letter-spacing: 1rem;
   margin-right: -1rem;
   text-transform: uppercase;
@@ -246,7 +269,7 @@ i.fa-times {
 }
 
 .cta-btn {
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0.5rem;
   color: var(--main-font-color-dark);
   font-size: 1.5rem;
@@ -260,12 +283,12 @@ i.fa-times {
 }
 
 /*First Section */
-.global-headline {
+.global-header {
   margin-top: 4rem;
   text-align: center;
 }
 
-.gt-info .global-headline {
+.gt-info .global-header {
   margin-top: 7rem;
 }
 
@@ -274,23 +297,19 @@ i.fa-times {
   margin: 2.5rem 0;
 }
 
-.headline-dark {
-  color: var(--body-font-color);
+.global-header .sub-header {
   letter-spacing: 0.5rem;
-  margin-right: -0.5rem;
-}
-
-.global-headline .sub-header {
-  letter-spacing: -0.5rem;
   line-height: 1;
 }
 
 .gt-info {
   text-align: center;
+  padding: 3rem;
 }
 
 .gt-description {
   margin-bottom: 3rem;
+  padding: 1.5rem;
 }
 
 .gt-description p {
@@ -436,6 +455,7 @@ footer {
 }
 
 .newsletter-input {
+  border: none;
   border-radius: 0.5rem;
   max-width: 25rem;
   padding: 1rem;
@@ -449,8 +469,130 @@ footer {
   cursor: pointer;
   font-size: 1.5rem;
   margin-left: 11rem;
-  padding: 1px 0.5rem;
+  padding: 2rem 2rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 100%;
+}
+
+/*Responsive*/
+@media screen and (min-width: 900px) {
+  section {
+    padding: 8rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    background-color: transparent;
+    flex-direction: row;
+    height: initial;
+    justify-content: initial;
+    padding: 0;
+    transform: initial;
+    transition: initial;
+    position: initial;
+    width: initial;
+  }
+
+  .nav-item {
+    border: none;
+    margin: 0 2.5rem;
+  }
+
+  .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
+
+  .active {
+    position: relative;
+  }
+
+  .active::before {
+    background-color: #ffffff;
+    bottom: -3px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .subheader {
+    font-size: 10rem;
+  }
+
+  .first-letter {
+    font-size: 12rem;
+  }
+
+  .headline {
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+  .line {
+    max-width: 11rem;
+  }
+
+  .gt-description {
+    align-items: center;
+    display: flex;
+    padding: 3rem;
+  }
+
+  .gt-description > div {
+    flex: 1;
+    padding: 3rem;
+  }
+
+  img {
+    flex: 1;
+    width: 100%;
+  }
+
+  /*.padding-right {
+    padding-right: 7rem;
+  }*/
+
+  .footer-content {
+    margin: auto;
+    max-width: 75rem;
+  }
+
+  .footer-content-about {
+    margin: 0 auto 5.5rem;
+    max-width: 50rem;
+  }
+
+  .footer-content-divider {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials,
+  .newsletter-form {
+    margin: 0 1rem;
+    max-width: 27rem;
+    width: 100%;
+  }
+
+  .social-icons i {
+    opacity: 1;
+  }
+
+  .newsletter-btn {
+    margin-left: 7.5rem;
+  }
 }
