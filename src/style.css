@@ -53,7 +53,7 @@ p {
 }
 
 /* Header */
-.header {
+header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
   left: 0;
   position: absolute;
@@ -75,7 +75,7 @@ p {
   font-size: 2.5rem;
   position: absolute;
   right: 2.5rem;
-  top: 5%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 1500;
 }
@@ -149,3 +149,5 @@ i.fa-times {
 .nav-link:hover {
   color: var(--secondary-font-color);
 }
+
+/* Hero */
