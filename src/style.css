@@ -326,7 +326,7 @@ i.fa-times {
   background-color: var(--main-font-color-dark);
 }
 
-/* Second Section*/
+/* Section 2 */
 .tips {
   background: url(img/bankhead.jpg) center no-repeat;
   background-size: cover;
@@ -339,3 +339,15 @@ i.fa-times {
 }
 
 /* Section 3 */
+.image-group {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.locations .gt-description {
+  margin-bottom: 0;
+  padding-top: 3rem;
+}
+
+/* Section 4 */
