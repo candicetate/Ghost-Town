@@ -166,7 +166,7 @@ i.fa-times {
 }
 
 .sub-header {
-  color: #ffffff;
+  color: var(--main-font-color-dark);
   font-size: 8.5rem;
   font-family: "Cabin Sketch", cursive;
   letter-spacing: 2px;
@@ -179,7 +179,7 @@ i.fa-times {
 }
 
 .headline {
-  color: #ffffff;
+  color: var(--main-font-color-dark);
   font-family: var(--main-font);
   font-size: 3rem;
   letter-spacing: 1rem;
@@ -326,4 +326,16 @@ i.fa-times {
   background-color: var(--main-font-color-dark);
 }
 
-/* Tips */
+/* Second Section*/
+.tips {
+  background: url(img/bankhead.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.between {
+  align-items: center;
+  display: flex;
+  min-height: 65vh;
+}
+
+/* Section 3 */
