@@ -26,6 +26,7 @@ html {
   font-family: var(--body-font);
   font-size: 10px;
   scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
 
 section {
   padding: 4rem 0;
+  overflow: hidden;
 }
 
 img {
@@ -190,6 +192,8 @@ i.fa-times {
 }
 
 .sub-header {
+  animation: fadeUp 0.5s forwards;
+  animation-delay: 1s;
   color: var(--main-font-color-dark);
   font-size: 5rem;
   font-family: "Cabin Sketch", cursive;
@@ -485,6 +489,7 @@ footer {
 @media screen and (min-width: 900px) {
   section {
     padding: 8rem;
+    overflow: hidden;
   }
 
   .menu-toggle {
