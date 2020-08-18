@@ -13,7 +13,7 @@ menuToggler.addEventListener("click", function () {
 
 // Scroll animations
 
-window.sr = scrollReveal();
+window.sr = ScrollReveal();
 
 sr.reveal(".animate-left", {
   origin: "left",
